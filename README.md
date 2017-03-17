@@ -1,4 +1,4 @@
-# babel-dynamic-import-reporter
+# babel-preset-dynamic-import-reporter
 
 Report timing data about `import()` back to an endpoint using a POST request.
 
@@ -36,7 +36,7 @@ _reportDynamicImport("foo.js", "./baz.js"), import("./baz.js");
 ## Installation
 
 ```sh
-$ npm install babel-plugin-dynamic-import-reporting
+$ npm install babel-preset-dynamic-import-reporting
 ```
 
 ## Usage
@@ -47,7 +47,7 @@ $ npm install babel-plugin-dynamic-import-reporting
 
 ```json
 {
-  "plugins": [
+  "presets": [
     ["dynamic-import-reporting", {
       "reportingRoute": "/api/report-module-import"
     }]
@@ -58,14 +58,14 @@ $ npm install babel-plugin-dynamic-import-reporting
 ### Via CLI
 
 ```sh
-$ babel --plugins [ dynamic-import-reporting --reportingRoute "/api/report-module-import" ] script.js
+$ babel --presets [ dynamic-import-reporting --reportingRoute "/api/report-module-import" ] script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: [
+  presets: [
     ["dynamic-import-reporting", {
       reportingRoute: "/api/report-module-import"
     }]
