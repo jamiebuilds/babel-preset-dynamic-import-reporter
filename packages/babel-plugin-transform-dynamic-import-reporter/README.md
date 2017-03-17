@@ -3,4 +3,4 @@
 Internal plugin for `babel-preset-dynamic-import-reporter` you should be using
 that instead.
 
-[Read docs here](https://github.com/thejameskyle/babel-dynamic-import-reporter)
+[Read docs here](https://github.com/thejameskyle/babel-preset-dynamic-import-reporter)
