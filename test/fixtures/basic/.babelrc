@@ -1,0 +1,7 @@
+{
+  "presets": [
+    ["../../../packages/babel-preset-dynamic-import-reporter", {
+      "reportingRoute": "/api/report-module-import"
+    }]
+  ]
+}

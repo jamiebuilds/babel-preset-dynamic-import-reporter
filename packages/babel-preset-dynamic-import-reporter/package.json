@@ -1,0 +1,11 @@
+{
+  "name": "babel-preset-dynamic-import-reporter",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-transform-dynamic-import-reporter": "^0.0.0",
+    "babel-runtime": "^6.23.0"
+  }
+}
