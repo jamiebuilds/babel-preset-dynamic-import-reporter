@@ -17,11 +17,12 @@ import("./baz.js");
 const _currentDate = Date.now();
 
 function _reportDynamicImport(currentModule, requestedModule) {
-  let diff = Date.now() - _currentDate;
+  let timing = Date.now() - _currentDate;
 
   fetch("/api/report-module-import", {
     method: 'POST',
     body: JSON.stringify({
+      timing,
       currentModule,
       requestedModule
     })

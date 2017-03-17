@@ -7,11 +7,12 @@ export default function({ types: t, template }) {
   let createInitDate = template('const INIT_DATE = Date.now()');
   let createImportHelper = template(`
     function IMPORT_HELPER(currentModule, requestedModule) {
-      let diff = Date.now() - INIT_DATE;
+      let timing = Date.now() - INIT_DATE;
 
       fetch(ROUTE, {
         method: 'POST',
         body: JSON.stringify({
+          timing,
           currentModule,
           requestedModule
         })
