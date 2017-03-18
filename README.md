@@ -21,6 +21,9 @@ function _reportDynamicImport(currentModule, requestedModule) {
 
   fetch("/api/report-module-import", {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
     body: JSON.stringify({
       timing,
       currentModule,
